@@ -69,9 +69,3 @@ function App() {
 }
 
 export default App;
-
-//  <Router>
-//   <Routes>
-//     <Route exact path="/" element={<Landing />} />
-//   </Routes>
-// </Router>

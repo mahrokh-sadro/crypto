@@ -18,7 +18,6 @@ const LineChart = ({coinHistory, currentPrice, coinName }) => {
       coinTimestamp.push(new Date(coinHistory?.data?.history[i]?.timestamp).toLocaleDateString());
 
     }
-  
 
     const data = {
       labels: coinTimestamp,
@@ -45,8 +44,6 @@ const LineChart = ({coinHistory, currentPrice, coinName }) => {
       },
     };
  
- 
- 
     return (
     <>
           <Row className="chart-header">
@@ -57,8 +54,6 @@ const LineChart = ({coinHistory, currentPrice, coinName }) => {
         </Col>
       </Row>
       <Line   data={data} options={options} />
-     
-    
     </>
   )
 }

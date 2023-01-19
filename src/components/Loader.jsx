@@ -6,7 +6,6 @@ const Loader = () => {
     <div className="loader">
     <Spin />
   </div>
-
     )
 }
 

@@ -10,8 +10,6 @@ import LineChart from './LineChart';
 const { Title, Text } = Typography;
 const { Option } = Select;
 
-
-
 const CryptoDetails = () => {
   const { coinId } = useParams();
   const [timeperiod, setTimeperiod] = useState('7d');
@@ -39,10 +37,8 @@ const CryptoDetails = () => {
     { title: 'Circulating Supply', value: `$ ${cryptoDetails?.supply?.circulating && (cryptoDetails?.supply?.circulating)}`, icon: <ExclamationCircleOutlined /> },
   ];
 
-
   return (
     <>
-    
    <Col className="coin-detail-container">
       <Col className="coin-heading-container">
         <Title level={2} className="coin-name">
@@ -103,9 +99,6 @@ const CryptoDetails = () => {
         </Col>
       </Col>  
     </Col>
-    
-        
-    
     </>
   )
 }
